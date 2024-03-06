@@ -566,21 +566,36 @@ p {
 @media only screen and (max-width: 600px) {
     /* Profile container */
     .profile-container .container {
-        height: 350px;
+        height: 220px;
     }
     .profile-container .container.active {
-        height: 800px;
+        height: 650px;
     }
     .profile-container .container {
         margin: 10px;
     }
 
     .profile-container .container .head {
-        display: block;
+        display: flex;
+        margin: 0;
+        margin-left: 3px;
+        border: 1px solid var(--brass);
+    }
+
+    .profile-container .container .head .pic {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .profile-container .container .head .head-bio {
+        margin-left: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .profile-container .container .head .head-bio h1 {
         margin: 0;
+        font-size: medium;
     }
 
     .profile-container .container .head .head-bio .bio{
