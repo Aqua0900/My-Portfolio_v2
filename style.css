@@ -579,7 +579,6 @@ p {
         display: flex;
         margin: 0;
         margin-left: 3px;
-        border: 1px solid var(--brass);
     }
 
     .profile-container .container .head .pic {
