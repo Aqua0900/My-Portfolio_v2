@@ -278,9 +278,6 @@ p {
     margin-right: 20px;
 }
 
-
-
-
 .info-container .content .resume-section .head-content hr {
     margin-inline-start: 1%;
     width: 10%;
@@ -387,6 +384,85 @@ p {
 .js div {
     width: 50%;
 }
+
+
+/* Contact */
+.info-container .content .contact-section {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.info-container .content .contact-section .head-content hr {
+    margin-inline-start: 1%;
+    width: 10%;
+    margin-bottom: 30px;
+    height: 5px;
+    background-color: var(--brass);
+    border-radius: 5px;
+    border-color: var(--brass);
+}
+
+.info-container .content .contact-section .map figure {
+    margin: 0;
+}
+
+.info-container .content .contact-section .map figure iframe {
+    filter: grayscale(1) invert(1);
+    border-radius: 20px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-section .form-container .email-form {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.contact-section .form-container .email-form #subject {
+    height: auto;
+    padding: 10px;
+    font-size: larger;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 22%);
+    color: var(--gray);
+    background-color: var(--darkGray);
+}
+
+.contact-section .form-container .email-form #message {
+    width: 100%;
+    height: 200px;
+    font-size: larger;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 22%);
+    color: var(--gray);
+    background-color: var(--darkGray);
+}
+
+.contact-section .form-container .email-form .submit-btn {
+    float: right;
+    background-color: var(--darkGray);
+    border: 1px solid hsl(0, 0%, 22%);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: larger;
+    color: var(--gray);
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.contact-section .form-container .email-form .submit-btn:hover {
+    background: linear-gradient(135deg, hsla(45, 100%, 71%, 0.251) 0%, hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
+    border: 1px solid var(--brass);
+    color: var(--brass);
+}
+
+.contact-section .form-container p {
+    font-size: large;
+}
+
+
 
 
 .footer-nav {
@@ -530,6 +606,7 @@ p {
         top: 0;
         bottom: 0;
     }
+
 
     /* Responsive Footer Nav */
     .footer-nav {
