@@ -300,7 +300,32 @@
 
                 <!-- Contact -->
                 <div id="contact" class="contact-section page">
-                    <h1>This is Contact</h1>
+                    <div class="head-content">
+                        <h1>Contact</h1>
+                        <hr>
+                    </div>  
+
+                    <div class="map">
+                        <figure>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3866.2935468657433!2d120.99978761029975!3d14.294369286098794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d72604b12cf5%3A0xfc4acf2486d497b6!2sLiving%20Word%20Ministries-%20GMA!5e0!3m2!1sen!2sph!4v1709804912086!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </figure>
+                    </div>
+
+                    <div class="form-container">
+                        <form id="emailForm" class="email-form">
+                            <input type="text" id="subject" name="subject" placeholder="Email Subject" required><br><br>
+                            <textarea id="message" name="message" rows="4" cols="50" placeholder="Type Message Here" required></textarea><br><br>
+                            <input type="submit" class="submit-btn" value="Send Email">
+                        </form>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Feel free to message me via email at <a href="#" style="color: #FDC25F;">igdurian@gmail.com</a>.</p>
+                        <p>Or contact me at my phone number: <text style="color: #FDC25F;">09914854229</text></p>
+                        <br>
+                    </div>
+
+
                 </div>
 
 
@@ -319,7 +344,31 @@
     
 </body>
 
+
+
+
 <script>
+
+    // For Email back end
+    document.getElementById('emailForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var subjectContent = document.getElementById('subject');
+      var messageContent = document.getElementById('message');
+      
+      var to = 'igdurian@gmail.com';
+      var subject = subjectContent.value;
+      var message = messageContent.value;
+
+      messageContent.value = '';
+      subjectContent.value = '';
+
+      var mailtoLink = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(message);
+
+      window.location.href = mailtoLink;
+    }); 
+
+    // For responsive navbar button
     document.getElementById('responsiveBtn').addEventListener('click', function() {
         const container = document.getElementById('profContainer');
 
@@ -335,6 +384,11 @@
         var contentElement = document.getElementById(contentId);
         contentElement.classList.toggle('active');
     }
+
+
+
+
+    // ---------------------- For Dynamic navbar highlight ------------------------------
 
    // Function to detect the hash value in the address bar
    function detectHash() {
