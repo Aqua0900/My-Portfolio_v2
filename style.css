@@ -97,7 +97,7 @@ p {
 
 .profile-container .prof-sc-icons .row .icon-container {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
 }
 
@@ -311,10 +311,6 @@ p {
     margin-left: 10px;
 }
 
-.info-container .content .resume-section .body-content .resume-container .resume-content {
-    margin-left: 30px;
-}
-
 .info-container .content .resume-section .body-content .resume-container .resume-content ul li::marker{
     color: var(--brass);
     font-size: x-large;
@@ -340,7 +336,11 @@ p {
 
 }
 
-.progress-text .fab {
+.progress-text .fab-container {
+    width: 40px;
+}
+
+.progress-text .fab-container .fab {
     margin-top: auto;
     margin-bottom: auto;
     padding: 0;
@@ -348,16 +348,12 @@ p {
     color: var(--brass);
 }
 
-.progress-text h3 {
-    margin: 0;
+.progress-text .text-container {
     margin-left: 10px;
 }
 
-.progress-text h3 text {
-    margin-left: 10px;
-    color: var(--gray);
-    font-weight: lighter;
-    font-size: medium;
+.progress-text .text-container h3 {
+    margin: 0;
 }
 
 .progress-bar {
@@ -370,7 +366,14 @@ p {
 .progress-bar div {
     border-radius: 5px;
     height: 10px;
+    text-align: right;
     background-color: var(--brass);
+}
+
+.progress-bar div text {
+    position: absolute;
+    transform: translateY(-25px);
+    color: var(--gray);
 }
 
 .html div{
@@ -382,6 +385,10 @@ p {
 }
 
 .js div {
+    width: 50%;
+}
+
+.php div {
     width: 50%;
 }
 
