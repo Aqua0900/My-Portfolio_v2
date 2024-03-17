@@ -129,6 +129,28 @@ p {
     margin-bottom: 5px;
 }
 
+.profile-container .container .resume-btn {
+    text-align: center;
+}
+
+.profile-container .container .resume-btn .btn {
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    background-color: var(--black);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.profile-container .container .resume-btn .btn:hover {
+    background: linear-gradient(135deg, hsla(45, 100%, 71%, 0.251) 0%, hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
+    border: 1px solid var(--brass);
+    color: var(--brass);
+}
+
 .profile-container .container .socmed-icons {
     display: flex;
     gap: 30px;
@@ -515,7 +537,6 @@ p {
         background: linear-gradient(135deg, hsla(45, 100%, 71%, 0.251) 0%, hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
         border: 1px solid var(--brass);
         color: var(--brass);
-
     }
 
     .profile-container .container {
