@@ -389,7 +389,6 @@
 <script>
 
     //For cv download
-
     document.getElementById('cvDownload').addEventListener('click', function() {
 
         var filename = 'CV_Ian Gabriel Durian.pdf';
@@ -451,7 +450,7 @@
 
 
 
-    // ---------------------- For Dynamic navbar highlight ------------------------------
+    // ---------------------- For Dynamic navbar highlight ------------------------------ //
 
    // Function to detect the hash value in the address bar
    function detectHash() {
@@ -510,5 +509,23 @@
             window.location.hash = "about";
         }
     });
+
+
+
+    // ---------------- For maximum top scroll at every hash change ------------------------ //
+
+    // Function to handle hashchange event
+    function handleHashChange() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    // Bind handleHashChange to the hashchange event
+    window.addEventListener("hashchange", handleHashChange);
+
+    // Call handleHashChange when the page loads to handle initial hash value
+    window.addEventListener("load", handleHashChange);
 </script>
 </html>
